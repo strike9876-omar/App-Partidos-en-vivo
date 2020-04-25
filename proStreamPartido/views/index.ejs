@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
-    <link rel='stylesheet' href='/stylesheets/estilos.css' />
-    <style>
-      body{
-        background-image: url(https://www.jakpost.travel/wimages/large/136-1364352_wallpaper-lama-llama-funny-camel-emotions-2560-x.jpg);
-        background-repeat: no-repeat;
-        background-size: cover; 
-
-        opacity:0.896;
-        background-color: rgba(0, 0, 0, .5);
-      }
-      .boton_personalizado{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-  }
-  .boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-
-    </style>
-  </head>
-<<<<<<< HEAD
-  <body class="trans">
-<<<<<<< HEAD
-
-    <%for (var i=0; i<datos.length; i++){ %>
-      <p><%=datos[i].NombreEquipo%></p>
-      <% } %>
-=======
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Navbar</a>
-=======
-  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Run &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
@@ -54,8 +10,7 @@
     <link rel="stylesheet" href="stylesheets/icomoon.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="stylesheets/bootstrap.css">
->>>>>>> develop
-    
+
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="stylesheets/owl.carousel.min.css">
     <link rel="stylesheet" href="stylesheets/owl.theme.default.min.css">
@@ -345,98 +300,5 @@
         <script src="javascripts/owl.carousel.min.js"></script>
         <!-- Main -->
         <script src="javascripts/main.js"></script>
-    <a href="login" class="button"><img src="/images/login.png" width="80" height="80"></a>
-    <h1 align="center" ><%= title %> </h1>
-    <h4 align="right">By Corahua Valencia Omar Daniel <br> Codigo: 150390</h4>
-    <h2 align="center"> Tourist Travels throughout PERU </h2>
-
-    <img class="hover" src="/images/login.png" width="80" height="80" >
-    <button id="b1" class="btn btn-primary">Machu Picchu, Cusco</button>
-    <button id="b2" class="btn btn-secondary">Valle del Colca, Arequipa</button>
-    <button id="b3" class="btn btn-success">Choquequirao, Cusco</button>
-    <div id="content" class="bg-info text-dark">
-    <h3>The best place that you choose from PERU</h3>
-    </div>
-    <script src="/javascripts/jquery.js" type="text/javascript"></script>
-    <%for (var i=0; i<datos.length; i++){ %>
-      <p><%=datos[i].NombreEquipo%></p>
-      <% } %>
-<<<<<<< HEAD
-      <div class="thumbex"><a href="javascript:void(0)"> <img src="/images/login.png"/></a></div>
-      <script>
-        $(document).ready(function(){
-          $("#b1").click(function(){
-            $.ajax({
-              url:"machu-picchu-cusco",
-              success: function(result){
-                $("#content").html(result);
-              }
-            })
-          })
-        })
-      </script>
-      <script>
-        $(document).ready(function(){
-          $("#b2").click(function(){
-            $.ajax({
-              url:"valle-del-colca-arequipa",
-              success: function(result){
-                $("#content").html(result);
-              }
-            })
-          })
-        })
-      </script>
-      <script>
-        $(document).ready(function(){
-          $("#b3").click(function(){
-            $.ajax({
-              url:"choquequirao-cusco",
-              success: function(result){
-                $("#content").html(result);
-              }
-            })
-          })
-        })
-      </script>
-      <script>
-        $(document).ready(function(){
-          $("#b4").click(function(){
-            $.ajax({
-              url:"lineas-de-nazca-ica",
-              success: function(result){
-                $("#content").html(result);
-              }
-            })
-          })
-        })
-      </script>
-      <script>
-        $(document).ready(function(){
-          $("#b5").click(function(){
-            $.ajax({
-              url:"kuelap-amazonas",
-              success: function(result){
-                $("#content").html(result);
-              }
-            })
-          })
-        })
-      </script>
-      <script>
-        $(document).ready(function(){
-          $("#b6").click(function(){
-            $.ajax({
-              url:"reserva-nacional-de-paracas-e-islas-ballestas-ica",
-              success: function(result){
-                $("#content").html(result);
-              }
-            })
-          })
-        })
-      </script>
->>>>>>> develop
-=======
->>>>>>> develop
   </body>
 </html>
