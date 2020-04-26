@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <title>Login Form Design One | Fazt</title>
     <link rel="stylesheet" href="/stylesheets/master.css">
+    <style>
+      body { 
+        background: url(images/bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover; 
+      }
+      
+    </style>
   </head>
   <body>
 
     <div class="login-box">
-      <img src="img/logo.png" class="avatar" alt="Avatar Image">
+      <img src="images/logo.jpg" class="avatar" alt="Avatar Image">
       <h1>Login Here</h1>
-      <form>
+      <form id="formlg">
         <!-- USERNAME INPUT -->
-        <label for="username">Username</label>
-        <input type="text" placeholder="Enter Username">
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username" name="usuario">
         <!-- PASSWORD INPUT -->
-        <label for="password">Password</label>
-        <input type="password" placeholder="Enter Password">
-        <input type="submit" value="Log In">
-        <a href="#">Lost your Password?</a><br>
-        <a href="#">Don't have An account?</a>
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" name="pass">
+        <input type="submit" value="Log In" class="botonlg">
       </form>
     </div>
+    <script src="javascripts/conexion.js" type="text/javascript"></script>
   </body>
 </html>

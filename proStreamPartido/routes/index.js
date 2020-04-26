@@ -7,7 +7,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   conn.getConnection((err, conexion) => {
     if(err){
-      console.log('Error de conexion')
+      console.log('Error de conexion de la bd')
       res.send('Error de conexion')
     }else{
       sql = 'SELECT * FROM tEquipo'
@@ -23,8 +23,14 @@ router.get('/', function(req, res, next) {
     }
   })
 });
-router.get('/login', (req, res, next) => {
+
+router.get('/login', function(req, res, next) {
   res.render('login');
 });
-
+router.get('/master', function(req, res, next) {
+  res.render('master');
+});
+router.get('/contact', (req, res, next) =>{
+  res.render('contact');
+});
 module.exports = router;

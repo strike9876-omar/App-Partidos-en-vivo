@@ -5,6 +5,12 @@ use bdPryStreamDep;
 /*-------------------------------------------*/
 /* creacion de las tablas*/
 /*-------------------------------------------*/
+create table tUsuario(
+	Usuario varchar(10) not null unique,
+    Contrasenia varchar(40) not null unique,
+    Nombre varchar(50),
+    primary key(Usuario)
+);
 create table tLiga(
 	CodLiga varchar(10) NOT NULL UNIQUE,
     NombreLiga varchar(50) NOT NULL UNIQUE,    
