@@ -14,20 +14,36 @@
     </style>
   </head>
   <body>
-
+    
     <div class="login-box">
       <img src="images/logo.jpg" class="avatar" alt="Avatar Image">
       <h1>Login Here</h1>
-      <form id="formlg">
+      <form id="frm1">
         <!-- USERNAME INPUT -->
         <label>Username</label>
-        <input type="text" placeholder="Enter Username" name="usuario">
+        <input type="text" placeholder="Enter Username" value="">
         <!-- PASSWORD INPUT -->
         <label>Password</label>
-        <input type="password" placeholder="Enter Password" name="pass">
-        <input type="submit" value="Log In" class="botonlg">
+        <input type="password" placeholder="Enter Password" value="">
       </form>
+        <button onclick="enviarFormulario()">Log In</button>
+      
     </div>
-    <script src="javascripts/conexion.js" type="text/javascript"></script>
+    <p id="demo"></p>
+    <script type="text/javascript">
+      var aux = datos[0].Usuario;
+      document.getElementById("demo").innerHTML = aux;
+      function enviarFormulario(){
+        var x = document.getElementById("frm1");
+        for(var i = 0; i < datos.length; i++){
+            if(x.elements[0].value == datos[i].Usuario && x.elements[1].value == datos[i].Contrasenia){
+                //window.location.href="master";
+            }
+        }
+        document.getElementById("demo").innerHTML = datos[i].Usuario;
+      }
+    </script>
+    <%=datos[1].Usuario%>
+
   </body>
 </html>

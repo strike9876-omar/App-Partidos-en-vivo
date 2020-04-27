@@ -4,6 +4,6 @@ const pool = mysql.createPool({
     host: '127.0.0.1',
     user: 'root',
     password: 'oculto',
-    database: 'bdPryStreamDep'
+    database: 'bdprystreamdep'
 });
 module.exports=pool;
